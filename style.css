@@ -209,7 +209,9 @@ input[type='search'] {
 .search-bar {
     padding: 0;
     font-size: 2rem;
-    width: auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     padding: 0;
     font-weight: 700;
     border: none;
@@ -228,6 +230,18 @@ input[type='search'] {
     padding-left: 1.6rem;
     background-size: 6rem;
     background-position: 0px 6px;
+}
+
+@media screen and (max-width: 576px) {
+    .search-bar {
+        font-size: 1.3rem;
+        padding-left: 1.8rem;
+        background-size: 6rem;
+    }
+    #search-form,
+    .search .col-12 {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 992px) {
